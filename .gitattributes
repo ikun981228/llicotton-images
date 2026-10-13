@@ -1,0 +1,15 @@
+# 图片是二进制，禁止任何行尾/编码转换
+* -text
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.gif  binary
+*.webp binary
+*.avif binary
+*.bmp  binary
+# 图片没有可读 diff，减少 git 徒劳尝试
+*.jpg  -diff -merge
+*.png  -diff -merge
+*.gif  -diff -merge
+*.webp -diff -merge
+*.avif -diff -merge
